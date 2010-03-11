@@ -55,7 +55,7 @@ def show_governorate_by_question(request, question_id, governorate_id,
     choices = Choice.objects.filter(question=question)
     total_responses = len(UserResponse.objects.filter(user__governorate = governorate_id))
     for choice in choices:
-        choice.num_votes = choice.num_votes(governorate)
+        choice.num_votes = choice.num_votes(governorate) + 4
     context.update(   {"region": governorate.name,
                        "governorate": governorate,
                        "bbox": governorate.bounding_box,

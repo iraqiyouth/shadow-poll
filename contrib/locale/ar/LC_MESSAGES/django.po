@@ -266,3 +266,6 @@ msgstr "٩"
 msgid "0"
 msgstr "٠"
 
+msgid "."
+msgstr ","
+
