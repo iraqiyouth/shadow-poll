@@ -1,6 +1,6 @@
 {% extends 'iraq.html' %}
 {% load i18n %}
-
+{% load i18ntags %}
 {% block javascripts %}
 <script src="/static/charts/javascripts/OpenLayers-2.8/OpenLayers.js"></script>
 <script src="/static/charts/javascripts/raphael-min.js"></script>
@@ -27,7 +27,9 @@
 			{% endifequal %}
 		 {% endfor %}
 		 
-        <span style="color: {{choice.category.color.code}};">{% trans choice.text %} ({{ choice.num_votes }} vote{{choice.num_votes|pluralize}})</span>
+
+		 
+        <span style="color: {{choice.category.color.code}};">{% trans choice.text %} ({{ choice.num_votes|translate_number }} vote{{choice.num_votes|pluralize}})</span>
         <br />
         {% endfor %}
     </div>
@@ -46,7 +48,7 @@
 <div class="chart_bar">
     <h3>
         <span class="response_criteria"> {% trans 'Top Response for' %} {% trans region %}</span>
-        <span class="top_concern" style="color: {{top_response.color}};">{% trans top_response.text %} {{ top_percentage }}%</span>
+        <span class="top_concern" style="color: {{top_response.color}};">{% trans top_response.text %} {{ top_response.percentage|translate_number }}%</span>
     </h3>
 
     <div id="chart">

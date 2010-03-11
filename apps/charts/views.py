@@ -12,7 +12,7 @@ from rapidsms.webui.utils import render_to_response
 
 from apps.charts.models import Governorate, District, VoiceMessage
 from apps.poll.models import Question, Choice, Color, UserResponse
-from apps.internationalization.models import Translator
+
 
 def voice_home_page(request):
     messages = VoiceMessage.objects.all()
@@ -82,8 +82,6 @@ def show_by_question(request, question_id, governorate_id, template, context={})
         if(break_up.percentage > top_response.percentage):
             top_response = break_up
     top_percentage = top_response.percentage
-    t = Translator()
-    top_percentage = t.translate_number_En_to_Ar(top_response.percentage)
     context.update( {"categories": question.get_categories(),
                      "question": question,
                      "top_response": top_response,

@@ -1,5 +1,4 @@
 from django.db import models
-from django.utils.translation import ugettext as _
 
 # some really bare bones models for localization
 class Language(models.Model):
@@ -61,11 +60,6 @@ class Translator(models.Model):
             result += self.translate_word(c)
         return result
     
-    def translate_number_En_to_Ar(self, number):
-        string=""
-        for i in range(len(str(number))):
-            string = string + _(str(number)[i]) 
-        return  string
 
     def translate_word(self, text):
         """ encapsulate all dictionary accesses here,
