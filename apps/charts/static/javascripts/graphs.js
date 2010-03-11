@@ -17,19 +17,20 @@ window.onload=function() {
     var y = 5;
     var darkHeight = 10;
     var lightHeight = 30;
-    var fillerWidth = 2;
-
+    var fillerWidth = 2; 
 	for (var i=0; i < regional_poll_responses.length; i++) {
-        var width = regional_poll_responses[i]['percentage']*factor;
+        var width = regional_poll_responses[i]['percentage']*factor ;
         var lightRectangle = paper.rect(x,y,width,lightHeight);
 		lightRectangle.attr({
 			fill: regional_poll_responses[i]['color'],
 			stroke: regional_poll_responses[i]['color'],
 			opacity: 0.30
 		});
-
-        var percentageText = paper.text(x+width/2.0,y+lightHeight/2.0,regional_poll_responses[i]['percentage']+"%");
-        percentageText.attr({
+///////////test 
+		var percentageNo = regional_poll_responses[i]['percentage']
+			percentageNo = percentageNo
+        var percentageText = paper.text(x+width/2.0,y+lightHeight/2.0,percentageNo+"%");
+         percentageText.attr({
             fill: regional_poll_responses[i]['color'],
             stroke: regional_poll_responses[i]['color'],
             font: "12px 'Arial'",

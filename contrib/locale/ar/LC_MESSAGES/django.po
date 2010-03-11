@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: rani <rani@hotmail.com>\n"
+"Last-Translator: sohaib <sohaib2001us@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -235,4 +235,34 @@ msgstr "ن"
 
 msgid "Boys And Girls"
 msgstr "الاولاد و البنات معا"
+
+msgid "1"
+msgstr "١"
+
+msgid "2"
+msgstr "٢"
+
+msgid "3"
+msgstr "٣"
+
+msgid "4"
+msgstr "٤"
+
+msgid "5"
+msgstr "٥"
+
+msgid "6"
+msgstr "٦"
+
+msgid "7"
+msgstr "٧"
+
+msgid "8"
+msgstr "٨"
+
+msgid "9"
+msgstr "٩"
+
+msgid "0"
+msgstr "٠"
 

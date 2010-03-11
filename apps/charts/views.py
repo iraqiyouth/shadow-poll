@@ -12,6 +12,7 @@ from rapidsms.webui.utils import render_to_response
 
 from apps.charts.models import Governorate, District, VoiceMessage
 from apps.poll.models import Question, Choice, Color, UserResponse
+from apps.internationalization.models import Translator
 
 def voice_home_page(request):
     messages = VoiceMessage.objects.all()
@@ -80,14 +81,17 @@ def show_by_question(request, question_id, governorate_id, template, context={})
     for break_up in response_break_up:
         if(break_up.percentage > top_response.percentage):
             top_response = break_up
-
+    top_percentage = top_response.percentage
+    t = Translator()
+    top_percentage = t.translate_number_En_to_Ar(top_response.percentage)
     context.update( {"categories": question.get_categories(),
                      "question": question,
                      "top_response": top_response,
                      "chart_data": simplejson.dumps([r.__dict__ for r in response_break_up]),
                      "national_data": simplejson.dumps([r.__dict__ for r in national_response_break_up]),
                      "character_english": character_english,
-                     "questions" : Question.objects.all()
+                     "questions" : Question.objects.all(),
+                     "top_percentage" :top_percentage
     }) 
     if 'chart_data' not in context:
     # if chart_data not set, default to national view
