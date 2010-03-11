@@ -18,9 +18,20 @@ def get_languages():
     return html[:-2]
 
 @register.filter
-def translate_number(value): # Only one argument.
-    "Converts a string into all lowercase"
+def translate_number(value): 
     string=""
     for i in range(len(str(value))):
         string = string + _(str(value)[i])  
     return  string
+
+
+@register.filter
+def myPluralize(value):  
+    if value > 1:
+        if translate_number(str(value)[0]) in "1234567890":
+            return  "s"
+        else:
+            return ""
+    else:
+         return ""
+    

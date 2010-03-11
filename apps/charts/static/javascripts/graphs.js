@@ -27,13 +27,13 @@ window.onload=function() {
 			opacity: 0.30
 		});
 ///////////test 
-		var percentageNo = regional_poll_responses[i]['percentage']
-			percentageNo = percentageNo
-        var percentageText = paper.text(x+width/2.0,y+lightHeight/2.0,percentageNo+"%");
+		var lang = document.getElementById("B1"); 
+		var	percentageNo = TransNum(regional_poll_responses[i]['percentage']) 
+        var percentageText = paper.text(x+width/2.0,y+lightHeight/2.0,percentageNo);
          percentageText.attr({
             fill: regional_poll_responses[i]['color'],
             stroke: regional_poll_responses[i]['color'],
-            font: "12px 'Arial'",
+            font: "13px 'Arial'",
             opacity: 1
         });
 
@@ -74,3 +74,35 @@ window.onload=function() {
         x = x + fillerWidth;
     }
 };
+
+function TransNum(number)
+	{
+		var lang = document.getElementById("B1");
+		if (lang != undefined)
+			{
+				if (lang.title == "Boys")
+					{
+						return number + "%";
+					}
+				else
+					{
+						var conv = new String(number);
+						conv = conv.replace('.',',');
+						conv = conv.replace('0','٠').replace('0','٠').replace('0','٠');
+						conv = conv.replace('1','١').replace('1','١').replace('1','١');
+						conv = conv.replace('2','٢').replace('2','٢').replace('2','٢');
+						conv = conv.replace('3','٣').replace('3','٣').replace('3','٣');
+						conv = conv.replace('4','٤').replace('4','٤').replace('4','٤');
+						conv = conv.replace('5','٥').replace('5','٥').replace('5','٥');
+						conv = conv.replace('6','٦').replace('6','٦').replace('6','٦');
+						conv = conv.replace('7','٧').replace('7','٧').replace('7','٧');
+						conv = conv.replace('8','٨').replace('8','٨').replace('8','٨');
+						conv = conv.replace('9','٩').replace('9','٩').replace('9','٩');
+						return "%" + conv;
+					}
+			}
+		else
+		{
+			return number + "%";
+		}
+	};

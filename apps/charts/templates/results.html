@@ -26,18 +26,21 @@
 				{% trans char %} &nbsp;.&nbsp;
 			{% endifequal %}
 		 {% endfor %}
-		 
-
-		 
-        <span style="color: {{choice.category.color.code}};">{% trans choice.text %} ({{ choice.num_votes|translate_number }} vote{{choice.num_votes|pluralize}})</span>
+        <span style="color: {{choice.category.color.code}};">{% trans choice.text %} ({{ choice.num_votes|translate_number }} {% trans "vote" %}{{choice.num_votes|myPluralize }}  )</span> 
         <br />
-        {% endfor %}
-    </div>
-</div>
+        {% endfor %} 
+    </div> 
+</div> 
 <p class="total_responses">
-   {% blocktrans %}{{ total_responses }} responses <br/>
-    from {{ region }} {% endblocktrans %} 
+    
+   {{total_responses|translate_number}}
+   
+    {% trans 'responses' %}<br/>
+   
+    {% trans 'from' %}  {% trans region %}   
+    
 </p>
+
 {% endblock %}
         
 {% block map_container %}

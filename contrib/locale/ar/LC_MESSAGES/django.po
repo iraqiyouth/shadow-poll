@@ -20,7 +20,7 @@ msgid "Register not understood."
 msgstr "لم نستطيع فهم الرسالة المسجلة, الرجاء إرسال - التسجيل  الدراسة  المحافظة  الحي"
 
 msgid "Submit"
-msgstr "اختيار"
+msgstr "إختيار"
 
 #: apps/charts/templates/map.html:27
 msgid "Welcome to the Iraq Children Happiness Website."
@@ -57,7 +57,7 @@ msgid "Home"
 msgstr "الصفحة الرئيسية"
 
 msgid "About"
-msgstr "عن المؤسسة"
+msgstr "نبذة عنّا"
 
 msgid "Poll"
 msgstr "التصويت"
@@ -73,6 +73,9 @@ msgstr "الأولاد"
 
 msgid "Girls"
 msgstr "البنات"
+
+msgid "Boys And Girls"
+msgstr "الأولاد و البنات معاً"
 
 msgid "Ages 6-11"
 msgstr "العمر من ٦-١١"
@@ -99,46 +102,46 @@ msgid "Read about how UNICEF used SMS to conduct the survey"
 msgstr "إقراء حول كيفية إستخدام اليونيسيف للرسائل القصيرة لإجراء الإحصائيات"
 
 msgid "I feel happy"
-msgstr "انا أشعر بالسعادة"
+msgstr "أنا أشعر بالسعادة"
 
 msgid "What makes you least happy?"
 msgstr "ما هي الأسباب التي تجعلك غير سعيد؟"
 
 msgid "Compared to my parents, my life in the future will be"
-msgstr "بالمقارنة مع ابي و امي حياتي سوف تكون"
+msgstr "بالمقارنة مع أبي و أمي حياتي سوف تكون"
 
 msgid "If i was leading the country"
-msgstr "اذا كنت حاكم الدولة سوف"
+msgstr "إذا كنت الحاكم سوف"
 
 msgid "Always"
-msgstr "دائما"
+msgstr "دائماً"
 
 msgid "Most of the time"
 msgstr "معظم الوقت"
 
 msgid "Rarely"
-msgstr "نادرا"
+msgstr "نادراً"
 
 msgid "Never"
-msgstr "ابدا"
+msgstr "أبداً"
 
 msgid "The three things I need most are"
-msgstr "اكثر ثلاثة اشياء احتاجها هي"
+msgstr "أكثر ثلاثة أشياء أحتاجها هي"
 
 msgid "Mostly"
-msgstr "غالبا"
+msgstr "غالباً"
 
 msgid "Top Response for"
-msgstr "الاستجابة الاعلى في"
+msgstr "الإستجابة الأعلى في"
 
 msgid "Security"
 msgstr "الأمن"
 
 msgid "responses"
-msgstr "اجابة"
+msgstr "إجابة"
 
-msgid "from Bhagdad"
-msgstr "من بغداد"
+msgid "from"
+msgstr "من"
 
 msgid "National results"
 msgstr "النتائج الوطنية"
@@ -147,7 +150,7 @@ msgid "Peace and Security"
 msgstr "السلام و الأمن"
 
 msgid "Go to school regularly"
-msgstr "الذهاب الى المدرسة بانتظام"
+msgstr "الذهاب الى المدرسة بإنتظام"
 
 msgid "Health care when sick"
 msgstr "الرعاية الصحية للمرضى"
@@ -168,28 +171,31 @@ msgid "Not have to work"
 msgstr "لا أحتاج للعمل"
 
 msgid "Be listened to"
-msgstr "ان يسمعوا رأيي"
+msgstr "أن يسمعوا رأيي"
 
 msgid "A place to play"
-msgstr "مكان للعب	"
+msgstr "مكان للعب"
 
 msgid "Family and friends to be safe"
-msgstr "أن يعيش اهلي و اصدقائي بأمان"
+msgstr "أن يعيش أهلي و أصدقائي بأمان"
 
 msgid "Others"
-msgstr "شيء اخر"
+msgstr "شيء آخر"
 
 msgid "Better"
-msgstr "افضل"
+msgstr "أفضل"
 
 msgid "About the same"
 msgstr "نفس الشيء"
 
 msgid "Worse"
-msgstr "اسوء"
+msgstr "أسوأ"
 
 msgid "I don't know"
-msgstr "لا اعرف"
+msgstr "لا أعرف"
+
+msgid "vote"
+msgstr "صوت"
 
 msgid "a"
 msgstr "أ"
@@ -233,8 +239,8 @@ msgstr "م"
 msgid "n"
 msgstr "ن"
 
-msgid "Boys And Girls"
-msgstr "الاولاد و البنات معا"
+msgid "s"
+msgstr ""
 
 msgid "1"
 msgstr "١"
