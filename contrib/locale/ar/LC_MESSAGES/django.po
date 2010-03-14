@@ -143,6 +143,15 @@ msgstr "No responses yet"
 msgid "Security"
 msgstr "الأمن"
 
+msgid "Social Environment"
+msgstr "البيئة الإجتماعية"
+
+msgid "Education"
+msgstr "التعليم"
+
+msgid "Food water and shelter"
+msgstr "الطعام و الشراب و المسكن"
+
 msgid "responses"
 msgstr "إجابة"
 
@@ -334,4 +343,16 @@ msgstr "ذي قار"
 
 msgid "Wassit"
 msgstr "واسط"
+
+msgid "Legal"
+msgstr "قانوني"
+
+msgid "copyright + Legal"
+msgstr "قانوني + حقوق النشر"
+
+msgid "Poll Questions"
+msgstr "أسئلة التصويت"
+
+msgid "Sections"
+msgstr "الأقسام"
 

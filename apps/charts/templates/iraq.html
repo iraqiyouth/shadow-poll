@@ -191,26 +191,24 @@
     {% block footer %}
     <div id="sub_sections">
         <div class="column  first">
-            <h3>Legal</h3>
+            <h3>{% trans 'Legal' %}</h3>
 
-            <p> copyright + Legal </p>
+            <p> {% trans 'copyright + Legal' %} </p>
         </div>
         <div class="column  ">
-            <h3>Poll Questions</h3>
+            <h3>{% trans 'Poll Questions' %}</h3>
             <ul>
-                <li><a href="#">I feel happy...</a></li>
-                <li><a href="#">What makes you most happy...</a></li>
-                <li><a href="#">What makes you least happy...</a></li>
-                <li><a href="#">Compared to my parents, my life will be...</a></li>
-                <li><a href="#">If i were leading the country all children...</a></li>
+                <li><a href="#">{% trans 'I feel happy' %}</a></li>
+                <li><a href="#">{% trans 'The three things I need most are' %}</a></li>
+                <li><a href="#">{% trans 'Compared to my parents, my life in the future will be' %}</a></li> 
             </ul>
         </div>
         <div class="column  last">
-            <h3>Sections</h3>
+            <h3>{% trans 'Sections' %}</h3>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Poll</a></li>
+                <li><a href="#">{% trans 'Home' %}</a></li>
+                <li><a href="#">{% trans 'About' %}</a></li>
+                <li><a href="#">{% trans 'Poll' %}</a></li>
             </ul>
         </div>
     </div>
