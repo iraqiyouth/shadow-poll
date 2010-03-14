@@ -134,6 +134,12 @@ msgstr "غالباً"
 msgid "Top Response for"
 msgstr "الإستجابة الأعلى في"
 
+msgid "No responses yet"
+msgstr "لا يوجد إجابات"
+
+msgid "لا يوجد إجابات"
+msgstr "No responses yet"
+
 msgid "Security"
 msgstr "الأمن"
 
