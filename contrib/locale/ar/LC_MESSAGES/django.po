@@ -275,3 +275,57 @@ msgstr "٠"
 msgid "."
 msgstr ","
 
+msgid "Anbar"
+msgstr "الأنبار"
+
+msgid "Babil"
+msgstr "بابل"
+
+msgid "Baghdad"
+msgstr "بغداد"
+
+msgid "Basrah"
+msgstr "البصرة"
+
+msgid "Dahuk"
+msgstr "دهوك"
+
+msgid "Diyala"
+msgstr "ديالى"
+
+msgid "Erbil"
+msgstr "أربيل"
+
+msgid "Kerbala"
+msgstr "كربلاء"
+
+msgid "Missan"
+msgstr "ميسان"
+
+msgid "Muthanna"
+msgstr "المثنّى"
+
+msgid "Najaf"
+msgstr "النجف"
+
+msgid "Ninewa"
+msgstr "نينوى"
+
+msgid "Qadissiya"
+msgstr "القادسية"
+
+msgid "Salah al-Din"
+msgstr "صلاح الدين"
+
+msgid "Sulaymaniyah"
+msgstr "السليمانية"
+
+msgid "Kirkuk"
+msgstr "كركوك"
+
+msgid "Thi-Qar"
+msgstr "ذي قار"
+
+msgid "Wassit"
+msgstr "واسط"
+
