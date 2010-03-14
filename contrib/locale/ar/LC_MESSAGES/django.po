@@ -177,7 +177,7 @@ msgid "Not have to work"
 msgstr "أن لا أحتاج للعمل"
 
 msgid "Be listened to"
-msgstr "أن يسمعوا رأيي"
+msgstr "أن يستمع الناس الى رأيي"
 
 msgid "A place to play"
 msgstr "توفير مكان للعب"
