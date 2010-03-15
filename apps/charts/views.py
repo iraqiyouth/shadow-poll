@@ -42,6 +42,12 @@ def show_governorate(request, governorate_id, template='results.html'):
 def show_iraq_by_question(request, question_id,
                           template='results.html'):
     context = {}
+    if len(request.GET.items()) ==0:
+        context['sort_params'] = "?gender=m,f&age=a1,a2,a3"
+    else:
+        context['sort_params'] ="?" + "&".join(['%s=%s' % (key, value)
+                                        for key, value in request.GET.items()])
+    
     total_responses = len(UserResponse.objects.all())
     context.update({"region": "Iraq", 
                     'total_responses': total_responses})
@@ -49,7 +55,15 @@ def show_iraq_by_question(request, question_id,
 
 def show_governorate_by_question(request, question_id, governorate_id,
                                  template='results.html'):
+
     context = {}
+    
+    if len(request.GET.items()) ==0:
+        context['sort_params'] = "?gender=m,f&age=a1,a2,a3"
+    else:
+        context['sort_params'] ="?" + "&".join(['%s=%s' % (key, value)
+                                        for key, value in request.GET.items()])
+        
     governorate = get_object_or_404(Governorate, pk=governorate_id)
     question = get_object_or_404(Question, pk=question_id)
     choices = Choice.objects.filter(question=question)
@@ -128,8 +142,23 @@ def get_kml(request, question_id, kml):
     question = Question.objects.get(id=question_id)
     placemarks_info_list = []
     style_dict_list = []
+    gender =request.GET.get('gender')
+    age = request.GET.get('age')
+    
+    selected_options={}
+    
+    if gender <>"" :
+        selected_options["gender"] = gender
+    if gender =="":
+        selected_options["gender"] = ""
+    
+    if age <> "" :
+        selected_options["age"] = age
+    if age == "" :
+        selected_options["age"] = ""
+    
     for (counter, geography) in enumerate(kml):
-        style_dict = geography.style(question)
+        style_dict = geography.style(question,selected_options)
         if style_dict:
             style_str = "s%s-%d" % (style_dict['color'].id, len(style_dict_list))
             placemarks_info_list.append({'id': geography.id,
@@ -151,3 +180,7 @@ def _render_to_kml(*args, **kwargs):
     "Renders the response as KML (using the correct MIME type)."
     return HttpResponse(loader.render_to_string(*args, **kwargs),
                         mimetype='application/vnd.google-earth.kml+xml')
+def get_options_query(request,sort_params):
+    context['sort_params'] ="?" + "&".join(['%s=%s' % (key, value)
+                                        for key, value in request.GET.items()])
+    
