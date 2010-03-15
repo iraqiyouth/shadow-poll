@@ -95,7 +95,14 @@ def show_by_question(request, question_id, governorate_id, template, context={})
     for break_up in response_break_up:
         if(break_up.percentage > top_response.percentage):
             top_response = break_up
-    top_percentage = top_response.percentage
+    checkPercentage = str(top_response.percentage).split(".")
+    if len(checkPercentage)> 0:
+        if checkPercentage[1]=="0" :
+                   top_percentage = checkPercentage[0]
+        else:
+                   top_percentage = top_response.percentage
+    else:
+        op_percentage = top_response.percentage  
     context.update( {"categories": question.get_categories(),
                      "question": question,
                      "top_response": top_response,
