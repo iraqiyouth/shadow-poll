@@ -134,9 +134,6 @@ msgstr "غالباً"
 msgid "Top Response for"
 msgstr "الإستجابة الأعلى في"
 
-msgid "No responses yet"
-msgstr "لا يوجد إجابات"
-
 msgid "لا يوجد إجابات"
 msgstr "No responses yet"
 
@@ -357,39 +354,35 @@ msgid "Sections"
 msgstr "الأقسام"
 
 msgid "Take me to voice message page"
-msgstr ""
-
-msgid "Poll Questions"
-msgstr ""
-
-msgid "Sections"
-msgstr ""
+msgstr "أنقلني الى صفحة الرسائل الصوتية"
 
 msgid "Age"
-msgstr ""
+msgstr "العمر"
 
 msgid "No messages to display"
-msgstr ""
+msgstr "لا يوجد رسائل للعرض"
 
 msgid " %(num_translated_messages)s translated so far "
-msgstr ""
+msgstr " %(num_translated_messages)s تم ترجمته حتى الآن "
 
 msgid "Map"
-msgstr ""
+msgstr "الخارطة"
 
 msgid ""
 "%(total_responses)s responses <br/>\n"
 "    from %(region)s "
 msgstr ""
+"%(total_responses)s إجابة <br/>\n"
+"    من %(region)s "
 
 msgid "Translation saved."
-msgstr ""
+msgstr "تم حفظ الترجمة."
 
 msgid "No responses yet"
-msgstr "اجابة"
+msgstr "لا يوجد إجابات"
 
 msgid "%(counter)s vote"
 msgid_plural "%(counter)s votes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(counter)s صوت"
+msgstr[1] "%(counter)s صوت"
 
